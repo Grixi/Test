@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SignupController">
+   <children>
+      <Label layoutX="251.0" layoutY="28.0" prefHeight="71.0" prefWidth="199.0" text="Create profile" textFill="#18ffff">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="singUpFirstName" focusColor="#00cbcc" layoutX="207.0" layoutY="108.0" prefHeight="34.0" prefWidth="288.0" promptText="First Name" unFocusColor="#18ffff">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="singUpLastName" focusColor="#00cbcc" layoutX="206.0" layoutY="159.0" prefHeight="34.0" prefWidth="288.0" promptText="Last Name" unFocusColor="#18ffff">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="singUpUsername" focusColor="#00cbcc" layoutX="207.0" layoutY="211.0" prefHeight="34.0" prefWidth="288.0" promptText="Username" unFocusColor="#18ffff">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXTextField>
+      <JFXPasswordField fx:id="singUpPassword" focusColor="#00cbcc" layoutX="207.0" layoutY="262.0" prefHeight="42.0" prefWidth="288.0" promptText="Password" unFocusColor="#18ffff">
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font></JFXPasswordField>
+      <JFXCheckBox fx:id="singUpCheckBoxMale" checkedColor="#8cd7ee" layoutX="252.0" layoutY="351.0" prefHeight="39.0" prefWidth="87.0" text="Male" textFill="#000000a4" unCheckedColor="#18ffff" />
+      <JFXCheckBox fx:id="singUpCheckBoxFemale" checkedColor="#8cd7ee" layoutX="362.0" layoutY="351.0" prefHeight="39.0" prefWidth="87.0" text="Female" textFill="#000000a4" unCheckedColor="#18ffff" />
+      <JFXButton fx:id="singUpButton" layoutX="251.0" layoutY="406.0" prefHeight="41.0" prefWidth="177.0" style="-fx-border-color: #18ffff; -fx-border-width: 2px;" text="Sign Up" textFill="#18ffff">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

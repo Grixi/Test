@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AddItemController">
+   <children>
+      <Label layoutX="180.0" layoutY="203.0" prefHeight="82.0" prefWidth="340.0" text="No do for todo, yeet." textFill="#d7cdcd">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="68.0" fitWidth="68.0" layoutX="316.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/iconAdd.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#00cbcc" layoutX="-189.0" layoutY="14.0" radius="305.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#00cbcc" layoutX="757.0" layoutY="542.0" radius="305.0" stroke="#12101000" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
